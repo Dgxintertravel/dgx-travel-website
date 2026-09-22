@@ -1,38 +1,16 @@
 {
   "masterLanguage": "pt",
-  "plannedLanguages": [
-    "pt",
-    "es",
-    "en"
-  ],
+  "locales": {
+    "pt": {"enabled": true, "root": "/pt/"},
+    "es": {"enabled": false, "root": "/es/"},
+    "en": {"enabled": false, "root": "/en/"}
+  },
+  "entry": "/",
+  "languageChoice": "/?choose=1",
   "pages": [
-    {
-      "path": "/pt/quem-somos/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/expertise/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/portfolio/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/portfolio/los-cabos/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/portfolio/xcaret/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/eventos/",
-      "status": "planned"
-    },
-    {
-      "path": "/pt/contato/",
-      "status": "planned"
-    }
-  ]
+    {"key": "home", "path": "/pt/", "status": "structural-v2"},
+    {"key": "los-cabos", "path": "/pt/portfolio/los-cabos/", "status": "structural-v2"},
+    {"key": "xcaret", "path": "/pt/portfolio/xcaret/", "status": "structural-v2"}
+  ],
+  "homeSections": ["dgx", "servicos", "metodologia", "mercados", "portfolio", "cases", "equipe", "contato"]
 }

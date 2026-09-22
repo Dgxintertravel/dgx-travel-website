@@ -1,0 +1,268 @@
+{
+  "externalFonts": "Blocked in controlled local test; production stylesheet retained",
+  "maxFileBytes": 7277274,
+  "results": [
+    {
+      "page": "entry",
+      "viewport": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": []
+    },
+    {
+      "page": "home",
+      "viewport": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "dgx",
+        "servicos",
+        "metodologia",
+        "mercados",
+        "portfolio",
+        "cases",
+        "equipe",
+        "contato"
+      ]
+    },
+    {
+      "page": "los-cabos",
+      "viewport": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "experiencias",
+        "conectividade",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "xcaret",
+      "viewport": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "all-fun",
+        "universo",
+        "hoteis",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "entry",
+      "viewport": "notebook",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": []
+    },
+    {
+      "page": "home",
+      "viewport": "notebook",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "dgx",
+        "servicos",
+        "metodologia",
+        "mercados",
+        "portfolio",
+        "cases",
+        "equipe",
+        "contato"
+      ]
+    },
+    {
+      "page": "los-cabos",
+      "viewport": "notebook",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "experiencias",
+        "conectividade",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "xcaret",
+      "viewport": "notebook",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "all-fun",
+        "universo",
+        "hoteis",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "entry",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": []
+    },
+    {
+      "page": "home",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "dgx",
+        "servicos",
+        "metodologia",
+        "mercados",
+        "portfolio",
+        "cases",
+        "equipe",
+        "contato"
+      ]
+    },
+    {
+      "page": "los-cabos",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "experiencias",
+        "conectividade",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "xcaret",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "all-fun",
+        "universo",
+        "hoteis",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "entry",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": []
+    },
+    {
+      "page": "home",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "dgx",
+        "servicos",
+        "metodologia",
+        "mercados",
+        "portfolio",
+        "cases",
+        "equipe",
+        "contato"
+      ]
+    },
+    {
+      "page": "los-cabos",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "experiencias",
+        "conectividade",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "page": "xcaret",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "missingAssets": [],
+      "errors": [],
+      "sections": [
+        "visao",
+        "all-fun",
+        "universo",
+        "hoteis",
+        "galeria",
+        "representacao"
+      ]
+    },
+    {
+      "languageEntry": "passed",
+      "rememberedPreference": "passed",
+      "returnToEntry": "passed"
+    },
+    {
+      "formValidation": "passed",
+      "consentRequired": true,
+      "emailDraft": "passed",
+      "noMessageSent": true
+    },
+    {
+      "reducedMotion": "passed"
+    }
+  ]
+}
