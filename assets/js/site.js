@@ -118,3 +118,16 @@ if (casesSection && cases.length) {
 const navLinks=[...document.querySelectorAll('.site-navigation a[href*="#"]')];
 const observedSections=navLinks.map(link=>document.querySelector(link.hash)).filter(Boolean);
 if (observedSections.length && 'IntersectionObserver' in window) { const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(link=>link.classList.toggle('is-active',link.hash===`#${entry.target.id}`));}}),{rootMargin:'-25% 0px -60% 0px',threshold:0}); observedSections.forEach(section=>sectionObserver.observe(section)); }
+
+// A restrained destination-hero drift adds depth without turning the page into a motion demo.
+const parallaxHeroes = [...document.querySelectorAll('.destination-hero .hero-image')];
+if (parallaxHeroes.length && !motion.matches) {
+  let ticking = false;
+  const updateParallax = () => {
+    const offset = Math.min(window.scrollY * .045, 28);
+    parallaxHeroes.forEach(image => image.style.setProperty('--hero-parallax', `${offset}px`));
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); } }, {passive:true});
+  updateParallax();
+}

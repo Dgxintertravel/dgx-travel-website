@@ -31,3 +31,29 @@ h1{font-size:clamp(46px,5.5vw,88px)}h2{font-size:clamp(32px,3.7vw,58px)}h3{font-
 @media(max-width:700px){h1{font-size:clamp(44px,10vw,64px)}h2{font-size:clamp(30px,8.2vw,48px)}h3{font-size:clamp(23px,6vw,31px)}.destination-hero h1{font-size:clamp(50px,12vw,76px)}.service-row:hover,.service-row.is-active{padding-inline:16px}.market-map{grid-template-columns:1fr 1fr;min-height:0;padding:20px 0 10px}.market-map svg{grid-column:1/-1;grid-row:1;height:245px;order:-1}.market-market{padding:10px 0}.market-market strong{font-size:20px}.market-map-caption{font-size:12px;margin-top:12px}.case-viewport{margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}.case-track .case{flex-basis:calc(100vw - (2 * var(--gutter)));display:block}.case-track .case-visual{margin-top:28px}.case-controls{justify-content:flex-start}.case-dots{margin-left:auto;margin-right:0}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.market-map .route-line{animation:none}.case-track{transition:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.background-video{visibility:hidden}.hero,.language-entry{background-image:url('/assets/images/6b2d5e122bb88cfe.jpg');background-size:cover;background-position:center}.destination-hero{background-image:none}}
+
+/* Luxury refinement: quieter proportions, tactile surfaces and a more natural web rhythm. */
+.section{padding-block:clamp(68px,7.2vw,116px)}
+.hero{padding-bottom:clamp(112px,11vw,150px)}
+.section-heading{margin-bottom:clamp(42px,5vw,62px)}
+.section-heading>p,.case-copy>p:not(.eyebrow):not(.case-meta):not(.tag-label),.destination-gallery figcaption{line-height:1.8}
+.lead{max-width:31ch}
+.intro,.market-title,.contact{align-items:start}
+.intro-copy h2,.market-title h2,.contact-heading h2{max-width:13ch}
+.service-row{min-height:106px}
+.service-row:not(.is-active){background:transparent}
+.service-row:not(.is-active):hover{background:#ffffff99}
+.market-map{background:radial-gradient(circle at 50% 48%,#29466f55,transparent 55%);border-color:#ffffff28}
+.market-map:before{content:'DGX / AMERICAS';position:absolute;top:12px;right:0;color:#8297b5;font-size:9px;letter-spacing:.18em}
+.case-viewport{scroll-snap-type:x mandatory}
+.case-track .case{scroll-snap-align:start}
+.case-track .case-visual{transition:transform .6s var(--ease-premium)}
+.case-track .case:hover .case-visual{transform:translateY(-4px)}
+.contact-form input:not([type=checkbox]),.contact-form select,.contact-form textarea{transition:background .3s,border-color .3s,box-shadow .3s}
+.contact-form input:not([type=checkbox]):focus,.contact-form select:focus,.contact-form textarea:focus{background:#fff;outline:0;border-color:var(--blue);box-shadow:0 2px 0 var(--blue)}
+.destination-hero{overflow:hidden}
+.destination-hero .hero-image{transform:translateY(var(--hero-parallax,0px)) scale(1.035);transition:transform .15s linear}
+.destination-gallery figure,.product-image,.case-gallery figure,.person{position:relative}
+.destination-gallery figure:after,.product-image:after,.case-gallery figure:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#ffffff1a,transparent 45%);opacity:0;transition:opacity .6s var(--ease-premium)}
+.destination-gallery figure:hover:after,.product-image:hover:after,.case-gallery figure:hover:after{opacity:1}
+@media(max-width:700px){.section{padding-block:62px}.section-heading{margin-bottom:36px}.service-row{min-height:0}.market-map:before{top:9px;font-size:8px}.destination-hero .hero-image{transform:scale(1.035)}.case-track .case:hover .case-visual{transform:none}}
