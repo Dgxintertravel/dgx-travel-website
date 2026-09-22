@@ -1,0 +1,108 @@
+{
+  "source": "DGX_Travel_FINAL_APRESENTACAO.html",
+  "sourceSha256": "b76633dbb97f5576a2002f5fcb033f76df743ff1221398acc6829f075577f2fc",
+  "assets": [
+    {
+      "path": "assets/images/4bf5446c40691d83.png",
+      "mime": "image/png",
+      "bytes": 146478,
+      "sha256": "4bf5446c40691d83c241ce5bf69ab8d7ef438fc19ddf0316fcf87877cc7d9b86"
+    },
+    {
+      "path": "assets/images/6b2d5e122bb88cfe.jpg",
+      "mime": "image/jpeg",
+      "bytes": 394290,
+      "sha256": "6b2d5e122bb88cfe67b4ace477dc383095c387d10182b2d8e129a92c6371a2be"
+    },
+    {
+      "path": "assets/video/828f446365b17e49.mp4",
+      "mime": "video/mp4",
+      "bytes": 7277274,
+      "sha256": "828f446365b17e4956233e1f1327d17c5da311f3e54071f9594ea62b67d90610"
+    },
+    {
+      "path": "assets/images/80f5f00c7e4a7e29.jpg",
+      "mime": "image/jpeg",
+      "bytes": 754417,
+      "sha256": "80f5f00c7e4a7e29a8356eace25e2e1cbfc828441545a971c0adb546ba48b7ac"
+    },
+    {
+      "path": "assets/images/1fde897a3226da9a.jpg",
+      "mime": "image/jpeg",
+      "bytes": 933636,
+      "sha256": "1fde897a3226da9a5ac4cd8a72506e6eacd130c80612ead3ff787ae05d569c87"
+    },
+    {
+      "path": "assets/images/681afd544c42672d.jpg",
+      "mime": "image/jpeg",
+      "bytes": 5095408,
+      "sha256": "681afd544c42672d6439ab4b6d7181c5f6797a5c935cb431493253704959280c"
+    },
+    {
+      "path": "assets/images/683eb9d0c2c426ba.jpg",
+      "mime": "image/jpeg",
+      "bytes": 5548443,
+      "sha256": "683eb9d0c2c426bac690bde178977fcbe65efd1adb496f52b67f5553ec98338b"
+    },
+    {
+      "path": "assets/images/1db79337a9e777e5.jpg",
+      "mime": "image/jpeg",
+      "bytes": 2641258,
+      "sha256": "1db79337a9e777e57e1b559cea24b5160b751054beaa9f3d73697e2044d62b83"
+    },
+    {
+      "path": "assets/images/cecdb54790b2f1bd.jpg",
+      "mime": "image/jpeg",
+      "bytes": 267420,
+      "sha256": "cecdb54790b2f1bddf9456a2a906f56a7402696d42915d415f5f976a0212854f"
+    },
+    {
+      "path": "assets/images/7b3fc7c773961916.jpg",
+      "mime": "image/jpeg",
+      "bytes": 1267707,
+      "sha256": "7b3fc7c7739619165b8f5623603aa53a89684d69794e80604c98b3cc106803cf"
+    },
+    {
+      "path": "assets/images/7caf6f10c2b5dff2.jpg",
+      "mime": "image/jpeg",
+      "bytes": 922883,
+      "sha256": "7caf6f10c2b5dff2db4bc0556ee3541087565ef0ed6213d2322d720caa522972"
+    },
+    {
+      "path": "assets/images/ff750034fdf7430c.jpg",
+      "mime": "image/jpeg",
+      "bytes": 94635,
+      "sha256": "ff750034fdf7430c0d2a97c91258ea14ac634cbeb732a52b2e358f707aa5cb38"
+    },
+    {
+      "path": "assets/images/24de53f7dfa7d48c.png",
+      "mime": "image/png",
+      "bytes": 256075,
+      "sha256": "24de53f7dfa7d48c60a50ca471973c71637df9f0807e000b0bcd92a72231117f"
+    },
+    {
+      "path": "assets/images/ae52a6d9fa6e820a.png",
+      "mime": "image/png",
+      "bytes": 150904,
+      "sha256": "ae52a6d9fa6e820ad29ade113351af660642bed9133157a330f3408e86b9ccc4"
+    },
+    {
+      "path": "assets/images/9ec2573d51b1e854.png",
+      "mime": "image/png",
+      "bytes": 226761,
+      "sha256": "9ec2573d51b1e8544f3414cbb3942bdafebe53e50f0de299a624785d9012ad48"
+    },
+    {
+      "path": "assets/images/9fc79efde0b420fc.jpg",
+      "mime": "image/jpeg",
+      "bytes": 78104,
+      "sha256": "9fc79efde0b420fc69193e0458cfa6bb525d662b03dd713708ba5c68553b6794"
+    },
+    {
+      "path": "assets/images/bee9717faccc9c90.png",
+      "mime": "image/png",
+      "bytes": 260637,
+      "sha256": "bee9717faccc9c90bc5669598a6fd771dafdf680a2b013644157f0e79714cc8f"
+    }
+  ]
+}

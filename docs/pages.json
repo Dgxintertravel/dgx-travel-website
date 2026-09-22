@@ -1,0 +1,38 @@
+{
+  "masterLanguage": "pt",
+  "plannedLanguages": [
+    "pt",
+    "es",
+    "en"
+  ],
+  "pages": [
+    {
+      "path": "/pt/quem-somos/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/expertise/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/portfolio/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/portfolio/los-cabos/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/portfolio/xcaret/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/eventos/",
+      "status": "planned"
+    },
+    {
+      "path": "/pt/contato/",
+      "status": "planned"
+    }
+  ]
+}
