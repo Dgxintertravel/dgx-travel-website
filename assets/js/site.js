@@ -20,7 +20,7 @@ if (header && navigation && toggle) {
     navigation.classList.toggle('is-open', open);
     header.classList.toggle('menu-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.innerHTML = `${open ? 'Fechar' : 'Menu'} <span aria-hidden="true">${open ? '×' : '☰'}</span>`;
+    toggle.innerHTML = `${open ? 'Fechar' : 'Menu'} <span class="menu-glyph" aria-hidden="true"></span>`;
     if (restoreFocus) toggle.focus();
   };
   const resize = () => { toggle.hidden = !compact.matches; setMenu(false); };
@@ -36,23 +36,8 @@ if (header && navigation && toggle) {
 
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 document.querySelectorAll('.background-video').forEach(video => {
-  const control = video.parentElement.querySelector('.video-control');
-  if (!control) return;
-  control.hidden = false;
-  const update = () => {
-    control.textContent = video.paused ? 'Reproduzir vídeo' : 'Pausar vídeo';
-    control.setAttribute('aria-pressed', String(video.paused));
-  };
-  const applyMotion = () => {
-    control.hidden = motion.matches;
-    if (motion.matches) { video.autoplay = false; video.pause(); }
-    update();
-  };
-  applyMotion(); motion.addEventListener('change', applyMotion);
-  video.addEventListener('play', update); video.addEventListener('pause', update);
-  control.addEventListener('click', () => {
-    if (video.paused) video.play().catch(update); else video.pause();
-  });
+  const apply = () => { if(motion.matches) video.pause(); else video.play().catch(()=>{}); };
+  apply(); motion.addEventListener('change',apply);
 });
 
 const form = document.querySelector('#contact-form');
@@ -80,38 +65,57 @@ document.querySelectorAll('.section-heading,.service-row,.method-steps li,.marke
   if (revealObserver) revealObserver.observe(element); else element.classList.add('is-visible');
 });
 
-// Services behave as an editorial index: one focus at a time, with keyboard support.
-const serviceRows = [...document.querySelectorAll('.service-row')];
-if (serviceRows.length) {
-  const activateService = row => serviceRows.forEach(item => {
-    const active = item === row; item.classList.toggle('is-active', active); item.setAttribute('aria-expanded', String(active)); item.tabIndex = 0;
-  });
-  serviceRows.forEach(row => { row.setAttribute('role','button'); row.addEventListener('click', () => activateService(row)); row.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateService(row); } }); });
-  activateService(serviceRows[0]);
+// Compact language menu with keyboard dismissal and an explicit PT return path.
+const localeToggle=document.querySelector('.locale-toggle'), localePanel=document.querySelector('.locale-panel');
+if(localeToggle){
+  const close=()=>{localePanel.hidden=true;localeToggle.setAttribute('aria-expanded','false');};
+  localeToggle.addEventListener('click',()=>{const open=localePanel.hidden;localePanel.hidden=!open;localeToggle.setAttribute('aria-expanded',String(open));});
+  document.addEventListener('click',e=>{if(!e.target.closest('.locales'))close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!localePanel.hidden){close();localeToggle.focus();}});
 }
 
-// Local map: the previous visual language returns as a lightweight, dependency-free map.
-const marketDiagram = document.querySelector('.market-diagram');
-if (marketDiagram) {
-  marketDiagram.className = 'market-map'; marketDiagram.removeAttribute('aria-hidden');
-  marketDiagram.setAttribute('role','group'); marketDiagram.setAttribute('aria-label','Mapa interativo da operação DGX entre Brasil e México');
-  marketDiagram.innerHTML = `<button class="market-market" type="button" data-market="mexico" aria-pressed="false"><strong>México</strong><span>Cidade do México · escritório</span></button><svg viewBox="0 0 760 300" role="img" aria-label="Conexão entre Brasil e México"><path class="gridline" d="M40 70H720M25 150H735M40 230H720"/><path class="land" d="M168 34l-39 18-25 33 16 25-19 32 21 25 7 49 31 30 31-19 26 23 28-31-8-39 28-22-21-31 13-31-28-19-14-27z"/><path class="land" d="M466 45l-29 19-20 32 23 27 9 33 32 25 16 34 27-17 12-43 35-33-19-31-41-20-14-26z"/><path class="route-line" d="M163 175 Q350 22 505 166"/><circle class="map-node" data-node="mexico" cx="163" cy="175" r="7"/><circle class="map-node is-focus" data-node="brasil" cx="505" cy="166" r="7"/><text class="map-label" x="526" y="162">SÃO PAULO</text><text class="map-sublabel" x="526" y="180">BRASIL</text><text class="map-label" x="87" y="171">CIDADE DO MÉXICO</text><text class="map-sublabel" x="87" y="189">MÉXICO</text></svg><button class="market-market is-active" type="button" data-market="brasil" aria-pressed="true"><strong>Brasil</strong><span>São Paulo · escritório</span></button><p class="market-map-caption">Uma operação. Dois mercados. A mesma presença estratégica.</p>`;
-  const markets = [...marketDiagram.querySelectorAll('.market-market')]; const nodes = [...marketDiagram.querySelectorAll('.map-node')];
-  const activateMarket = market => { markets.forEach(button => { const active=button.dataset.market===market; button.classList.toggle('is-active',active); button.setAttribute('aria-pressed',String(active)); }); nodes.forEach(node => node.classList.toggle('is-focus',node.dataset.node===market)); };
-  markets.forEach(button => button.addEventListener('click', () => activateMarket(button.dataset.market)));
+// Desktop editorial index, mobile accordion; every description remains in the HTML.
+const serviceRows=[...document.querySelectorAll('.service-row')];
+if(serviceRows.length){
+  const list=document.querySelector('.service-list');
+  const panel=document.createElement('div');panel.className='service-detail';panel.setAttribute('aria-hidden','true');list.append(panel);list.classList.add('enhanced');
+  let selected=0;
+  const select=(index,collapse=false)=>{
+    selected=index;
+    serviceRows.forEach((row,i)=>{const active=i===index&&!collapse;row.classList.toggle('is-active',active);row.querySelector('button').setAttribute('aria-expanded',String(active));row.querySelector('p').hidden=!active;});
+    const row=serviceRows[index];panel.innerHTML=`<span class="detail-number">0${index+1} / 06</span><h3>${row.querySelector('.service-trigger>span:nth-child(2)').textContent}</h3><p>${row.querySelector('p').textContent}</p>`;
+    if(!motion.matches)panel.animate([{opacity:.3,transform:'translateY(6px)'},{opacity:1,transform:'none'}],{duration:320});
+  };
+  serviceRows.forEach((row,i)=>{const button=row.querySelector('button');button.addEventListener('click',()=>select(i,matchMedia('(max-width:700px)').matches&&row.classList.contains('is-active')));button.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&innerWidth>700)select(i);});button.addEventListener('keydown',e=>{if(['ArrowDown','ArrowUp','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?5:(selected+(e.key==='ArrowDown'?1:5))%6;select(next);serviceRows[next].querySelector('button').focus();}});});select(0);
 }
 
-// Cases become a controlled editorial slider instead of a long stack of identical blocks.
-const casesSection = document.querySelector('.cases');
-const cases = casesSection ? [...casesSection.querySelectorAll(':scope > .case')] : [];
-if (casesSection && cases.length) {
-  const viewport = document.createElement('div'); viewport.className='case-viewport'; const track=document.createElement('div'); track.className='case-track';
-  cases.forEach(item => track.appendChild(item)); viewport.appendChild(track); casesSection.appendChild(viewport);
-  const controls=document.createElement('div'); controls.className='case-controls'; controls.innerHTML=`<span class="case-count" aria-live="polite">01 / ${String(cases.length).padStart(2,'0')}</span><span class="case-dots" aria-label="Selecionar case"></span><button type="button" data-case-prev aria-label="Case anterior">←</button><button type="button" data-case-next aria-label="Próximo case">→</button>`; casesSection.appendChild(controls);
-  const dots=controls.querySelector('.case-dots'); cases.forEach((_,i)=>{const dot=document.createElement('button');dot.type='button';dot.setAttribute('aria-label',`Ir para o case ${i+1}`);dot.className=i===0?'is-active':'';dot.addEventListener('click',()=>go(i));dots.appendChild(dot);});
-  let current=0; const go=index=>{current=(index+cases.length)%cases.length;track.style.transform=`translateX(calc(-${current} * (min(100%, 1120px) + clamp(24px, 4vw, 70px)))`;controls.querySelector('.case-count').textContent=`${String(current+1).padStart(2,'0')} / ${String(cases.length).padStart(2,'0')}`;dots.querySelectorAll('button').forEach((dot,i)=>dot.classList.toggle('is-active',i===current));cases[current].focus?.({preventScroll:true});};
-  controls.querySelector('[data-case-prev]').addEventListener('click',()=>go(current-1)); controls.querySelector('[data-case-next]').addEventListener('click',()=>go(current+1));
-  casesSection.addEventListener('keydown',event=>{if(event.key==='ArrowRight')go(current+1);if(event.key==='ArrowLeft')go(current-1);}); cases.forEach(item=>{item.tabIndex=0;}); go(0);
+// A four-stage timeline with a single reading area and a fine progress line.
+const methodList=document.querySelector('.method-steps');
+if(methodList){
+ const items=[...methodList.children];const detail=document.createElement('div');detail.className='method-detail';detail.setAttribute('aria-hidden','true');methodList.after(detail);methodList.classList.add('enhanced');
+ const select=index=>{items.forEach((item,i)=>{item.classList.toggle('is-active',i===index);item.querySelector('button').setAttribute('aria-expanded',String(i===index));item.querySelector('p').hidden=i!==index;});const item=items[index];detail.innerHTML=`<span class="process-number">0${index+1}</span><div><h3>${item.querySelector('button').lastChild.textContent}</h3><p>${item.querySelector('p').textContent}</p></div>`;methodList.style.setProperty('--progress',`${(index+1)/items.length*100}%`);};
+ items.forEach((item,i)=>{let button=item.querySelector('button');button.addEventListener('click',()=>select(i));button.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')select(i);});button.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();let next=(i+(e.key==='ArrowRight'?1:3))%4;select(next);items[next].querySelector('button').focus();}});});select(0);
+}
+
+// Native horizontal scrolling handles touch, trackpads, focus and responsive resizing.
+const casesSection=document.querySelector('.cases');
+const cases=casesSection?[...casesSection.querySelectorAll(':scope>.case')]:[];
+if(cases.length){
+ const viewport=document.createElement('div');viewport.className='case-viewport';viewport.tabIndex=0;viewport.setAttribute('role','region');viewport.setAttribute('aria-label','Projetos DGX. Use as setas para navegar.');
+ cases.forEach(item=>{item.classList.remove('reveal');item.classList.add('is-visible');viewport.append(item);});casesSection.append(viewport);
+ const controls=document.createElement('div');controls.className='case-controls';const arrow='<svg viewBox="0 0 32 16" fill="none" aria-hidden="true"><path d="M1 8h29M23 1l7 7-7 7" stroke="currentColor" stroke-width="1"/></svg>';
+ controls.innerHTML=`<span class="case-count" aria-live="polite">01 / 05</span><button type="button" data-case-prev aria-label="Case anterior">${arrow}</button><button type="button" data-case-next aria-label="Próximo case">${arrow}</button>`;casesSection.append(controls);
+ let current=0;
+ const update=()=>{let left=viewport.getBoundingClientRect().left;current=cases.reduce((best,item,i)=>Math.abs(item.getBoundingClientRect().left-left)<Math.abs(cases[best].getBoundingClientRect().left-left)?i:best,0);controls.querySelector('.case-count').textContent=`${String(current+1).padStart(2,'0')} / ${String(cases.length).padStart(2,'0')}`;controls.querySelector('[data-case-prev]').disabled=current===0;controls.querySelector('[data-case-next]').disabled=current===cases.length-1;};
+ const go=index=>{const target=cases[Math.max(0,Math.min(index,cases.length-1))];viewport.scrollTo({left:viewport.scrollLeft+target.getBoundingClientRect().left-viewport.getBoundingClientRect().left,behavior:motion.matches?'instant':'smooth'});};
+ viewport.addEventListener('scroll',update,{passive:true});controls.querySelector('[data-case-prev]').addEventListener('click',()=>go(current-1));controls.querySelector('[data-case-next]').addEventListener('click',()=>go(current+1));viewport.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();go(current+(e.key==='ArrowRight'?1:-1));}});update();
+}
+
+// Destination chapter navigation follows the reader and keeps headings below both bars.
+const chapters=[...document.querySelectorAll('.chapter-nav a')];
+if(chapters.length){
+ let queued=false;const update=()=>{const line=(header?.offsetHeight||0)+document.querySelector('.chapter-nav').offsetHeight+45;let current=chapters[0];chapters.forEach(link=>{if(document.querySelector(link.hash)?.getBoundingClientRect().top<=line)current=link;});if(window.scrollY+innerHeight>=document.documentElement.scrollHeight-5)current=chapters[chapters.length-1];chapters.forEach(link=>{link.classList.toggle('is-active',link===current);if(link===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});queued=false;};
+ window.addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});update();
 }
 
 // The global header reflects the section currently in view.
