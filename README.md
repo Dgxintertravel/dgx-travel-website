@@ -14,9 +14,9 @@ A entrada lembra apenas a escolha de português. `/?choose=1` reabre a seleção
 ## Manutenção
 
 - `scripts/build.mjs`: conteúdo e templates compartilhados de header, footer, imagens, galerias e páginas. Após editar, rode `node scripts/build.mjs` e revise os HTMLs gerados.
-- `assets/css/site.css`: sistema visual e composições responsivas.
-- `assets/js/site.js`: menu, preferência de idioma, controle do vídeo e preparação de mensagem.
-- `assets/images/` e `assets/video/`: assets originais, sem renomeação. `docs/assets.json` mantém seus hashes.
+- `assets/css/site.css` e `assets/css/refinement.css`: sistema visual e composições responsivas.
+- `assets/js/site.js`: menus, preferência de idioma, serviços, etapas, cases, movimento reduzido e preparação de mensagem.
+- `assets/images/` e `assets/video/`: assets da apresentação e novas fotos otimizadas. `docs/assets.json` registra os assets originais; `docs/photo-assets.json` mapeia a seleção de setembro de 2026, suas dimensões e versões responsivas.
 
 Os HTMLs gerados são versionados. Não há framework, instalação de pacotes ou build obrigatório no Cloudflare. Para prévia local, sirva a raiz por HTTP; por exemplo, `npx serve .`.
 
@@ -26,10 +26,10 @@ Framework: None. Build command vazio. Build output directory: `/`. Root director
 
 ## Escopo e pendências editoriais
 
-Esta é uma V2 estrutural. Cases sem material definitivo e imagens de segmentos/hotéis usam placeholders explícitos. Anos, locais e serviços atribuídos aos novos cases são conteúdo-base para validação; não há indicadores ou resultados inventados. As fotos da equipe foram preservadas.
+As lacunas fotográficas foram preenchidas com o pacote fornecido em 24/09/2026: 28 fotos selecionadas, incluindo os retratos atualizados de Diana, Raquel e Mário. Não há placeholders de imagem nas páginas geradas. Anos, locais e serviços atribuídos aos novos cases continuam como conteúdo-base para validação; não há indicadores ou resultados inventados.
 
-O formulário valida campos e consentimento e prepara um link `mailto:info@dgxtravel.com`. Nada é enviado ou salvo em banco pelo site. O usuário conclui o envio em seu próprio aplicativo de e-mail. A versão sem JavaScript disponibiliza o contato direto. Backend, política de privacidade definitiva, copy final, fotos, SEO, performance e traduções ficam para as próximas etapas.
+O formulário valida campos e consentimento e prepara um link `mailto:info@dgxtravel.com`. Nada é enviado ou salvo em banco pelo site. O usuário conclui o envio em seu próprio aplicativo de e-mail. A versão sem JavaScript disponibiliza o contato direto. Backend, política de privacidade definitiva, copy final, SEO e traduções ficam para as próximas etapas.
 
-Fontes continuam vindo de Google Fonts. O mapa dependente de serviços externos foi substituído por um diagrama local de conexão São Paulo ↔ Cidade do México, sem simular geografia. Vídeos têm controle de pausa e respeitam redução de movimento.
+Fontes continuam vindo de Google Fonts. O mapa é um SVG geográfico local das Américas, com conexão São Paulo ↔ Cidade do México. Vídeos usam autoplay, muted e loop, sem controle visual, e respeitam redução de movimento.
 
 Referências de conteúdo: briefing V2 do usuário, apresentação aprovada e [conceito oficial All-Fun Inclusive](https://www.hotelxcaret.com/en/all-fun-inclusive/). Não foram inseridos horários, tarifas, voos ou condições comerciais específicas.

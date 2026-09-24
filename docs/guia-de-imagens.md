@@ -1,5 +1,7 @@
 # DGX — guia para envio de imagens
 
+Atualização de 24/09/2026: as lacunas fotográficas abaixo foram preenchidas. Esta lista permanece como referência de dimensões e do pedido original. A seleção utilizada está registrada em `photo-assets.json` e `integracao-de-fotos.md`.
+
 Dimensões recomendadas para os arquivos de origem, em pixels (largura × altura). Os espaços se adaptam ao dispositivo; não são dimensões fixas de exibição. Manter pessoas, rostos, logos e detalhes importantes afastados das bordas. Enviar também o original sem recorte quando disponível.
 
 | Aplicação | Dimensão recomendada | Orientação / proporção |

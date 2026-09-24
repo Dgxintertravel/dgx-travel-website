@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "source": "iloveimg-converted/DIANA POMAR.jpeg",
+    "path": "team/diana-pomar.webp",
+    "alt": "Diana Pomar",
+    "width": 800,
+    "height": 1154,
+    "bytes": 41538,
+    "small": {
+      "path": "team/diana-pomar-small.webp",
+      "width": 693,
+      "height": 1000,
+      "bytes": 30226
+    },
+    "sourceBytes": 84595,
+    "sha256": "0cfce49390bb74b33981baa7df0ff8dea71409c3c08440534d235260059a9742"
+  },
+  {
+    "id": 24,
+    "source": "iloveimg-converted/RAQUEL RAMIREZ.jpeg",
+    "path": "team/raquel-ramirez.webp",
+    "alt": "Raquel Ramirez",
+    "width": 800,
+    "height": 1066,
+    "bytes": 43564,
+    "small": {
+      "path": "team/raquel-ramirez-small.webp",
+      "width": 720,
+      "height": 959,
+      "bytes": 33428
+    },
+    "sourceBytes": 85212,
+    "sha256": "c579d5a5edf28c75a0bdbf206fba1d78b132a3be1bd0c24dbf1cd855d4e36b22"
+  },
+  {
+    "id": 23,
+    "source": "iloveimg-converted/MÁRIO ARAUJO.jpeg",
+    "path": "team/mario-araujo.webp",
+    "alt": "Mario Araujo",
+    "width": 800,
+    "height": 979,
+    "bytes": 89188,
+    "small": {
+      "path": "team/mario-araujo-small.webp",
+      "width": 720,
+      "height": 881,
+      "bytes": 71570
+    },
+    "sourceBytes": 176016,
+    "sha256": "a13ccd91a3db0793345ca2ba5a142a2486a44a2e70502145b0222e56397e3ffd"
+  },
+  {
+    "id": 26,
+    "source": "iloveimg-converted/SECTUR 3.PNG",
+    "path": "cases/sectur-principal.webp",
+    "alt": "Encontro institucional do México com participantes no estande",
+    "width": 1080,
+    "height": 720,
+    "bytes": 179172,
+    "small": {
+      "path": "cases/sectur-principal-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 79684
+    },
+    "sourceBytes": 4239585,
+    "sha256": "f1d8572c44a9855b68319eeed2acb06e6c0c9645ec70de5a964e6e791132ceb3"
+  },
+  {
+    "id": 25,
+    "source": "iloveimg-converted/SECTUR (2).jpg",
+    "path": "cases/sectur-encontro.webp",
+    "alt": "Participantes em encontro do turismo mexicano",
+    "width": 1125,
+    "height": 2000,
+    "bytes": 325058,
+    "small": {
+      "path": "cases/sectur-encontro-small.webp",
+      "width": 563,
+      "height": 1000,
+      "bytes": 103484
+    },
+    "sourceBytes": 2163366,
+    "sha256": "cce294e2ba9cdff2b6c5e63945b1818d820a33f23f4a3ff19e0edf9d06e979b2"
+  },
+  {
+    "id": 28,
+    "source": "iloveimg-converted/SECTUR 5.PNG",
+    "path": "cases/sectur-estande.webp",
+    "alt": "Estande do México em feira de turismo",
+    "width": 1080,
+    "height": 720,
+    "bytes": 199390,
+    "small": {
+      "path": "cases/sectur-estande-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 90710
+    },
+    "sourceBytes": 4272070,
+    "sha256": "ff57b3643995644d93d7bd2bdedb6969034f1e29eef2eb617520ba37df8073f6"
+  },
+  {
+    "id": 63,
+    "source": "iloveimg-converted/XCARET - FESTURIS 5.jpeg",
+    "path": "cases/xcaret-festuris-principal.webp",
+    "alt": "Participantes reunidos no evento Xcaret Festuris",
+    "width": 1800,
+    "height": 1012,
+    "bytes": 353458,
+    "small": {
+      "path": "cases/xcaret-festuris-principal-small.webp",
+      "width": 720,
+      "height": 405,
+      "bytes": 68472
+    },
+    "sourceBytes": 3574408,
+    "sha256": "5d70d5c0225f0633e253261d40c2f0d758b441bc9e110885a49a0d9f0cae6ad0"
+  },
+  {
+    "id": 62,
+    "source": "iloveimg-converted/XCARET - FESTURIS 4.jpeg",
+    "path": "cases/xcaret-festuris-apresentacao.webp",
+    "alt": "Apresentação de Xcaret para convidados",
+    "width": 1800,
+    "height": 1012,
+    "bytes": 324498,
+    "small": {
+      "path": "cases/xcaret-festuris-apresentacao-small.webp",
+      "width": 720,
+      "height": 405,
+      "bytes": 58242
+    },
+    "sourceBytes": 3294771,
+    "sha256": "322281da9edf074abc7f4ff815eba5e77f6494eab96708e14ff382cd606b9ab5"
+  },
+  {
+    "id": 61,
+    "source": "iloveimg-converted/XCARET - FESTURIS 3.jpeg",
+    "path": "cases/xcaret-festuris-estande.webp",
+    "alt": "Estande Xcaret na Festuris",
+    "width": 1125,
+    "height": 2000,
+    "bytes": 310694,
+    "small": {
+      "path": "cases/xcaret-festuris-estande-small.webp",
+      "width": 563,
+      "height": 1000,
+      "bytes": 85162
+    },
+    "sourceBytes": 3021856,
+    "sha256": "9baa5856d03355169bf1ec123391ca34b032469b21baa33bc610ac09abe8222d"
+  },
+  {
+    "id": 3,
+    "source": "iloveimg-converted/EVENTO LOS CABOS MICE E WEEDINGS 2.png",
+    "path": "cases/los-cabos-mice-weddings-principal.webp",
+    "alt": "Convidados no evento Los Cabos MICE e Weddings",
+    "width": 1080,
+    "height": 720,
+    "bytes": 168810,
+    "small": {
+      "path": "cases/los-cabos-mice-weddings-principal-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 74658
+    },
+    "sourceBytes": 4209298,
+    "sha256": "3fb90a61fd536786e1f36e84632f75cce7b7a7bbb14f51fa8771792df233736b"
+  },
+  {
+    "id": 2,
+    "source": "iloveimg-converted/EVENTO LOS CABOS MICE E WEEDINGS 1.png",
+    "path": "cases/los-cabos-mice-weddings-encontro.webp",
+    "alt": "Apresentação e relacionamento no evento Los Cabos MICE e Weddings",
+    "width": 1080,
+    "height": 1620,
+    "bytes": 287018,
+    "small": {
+      "path": "cases/los-cabos-mice-weddings-encontro-small.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 104634
+    },
+    "sourceBytes": 9228563,
+    "sha256": "740e978dee86859c47cda191ff01622b452525ab29de686c055b0a3ec28c6bfc"
+  },
+  {
+    "id": 13,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/LUXO LOS CABOS 1.jpg",
+    "path": "los-cabos/luxo.webp",
+    "alt": "Piscina com vista para a praia e as formações rochosas de Los Cabos",
+    "width": 1348,
+    "height": 899,
+    "bytes": 165308,
+    "small": {
+      "path": "los-cabos/luxo-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 44472
+    },
+    "sourceBytes": 926971,
+    "sha256": "d3e97e436bd02e0d62ede9e8678b75383cd82d16e1fda21848b7ec008cbb63dd"
+  },
+  {
+    "id": 21,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/gastronomia.jpg",
+    "path": "los-cabos/gastronomia.webp",
+    "alt": "Experiência gastronômica ao ar livre em Los Cabos",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 283882,
+    "small": {
+      "path": "los-cabos/gastronomia-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 74978
+    },
+    "sourceBytes": 49699026,
+    "sha256": "33e43d7d0b64abfb0f3df03cbc62a1433092ed54e8a159cefca0c7ba7befcdb1"
+  },
+  {
+    "id": 14,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/MICE LOS CABOS 1.jpg",
+    "path": "los-cabos/mice.webp",
+    "alt": "Encontro de profissionais à beira-mar em Los Cabos",
+    "width": 1800,
+    "height": 1201,
+    "bytes": 261872,
+    "small": {
+      "path": "los-cabos/mice-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 55070
+    },
+    "sourceBytes": 31612476,
+    "sha256": "5c9b4f8e2d1d7a2540cea349b3823ae049863eae9df3749ebd37e506c480aeab"
+  },
+  {
+    "id": 6,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/CASAMENTOS LOS CABOS 2.JPG",
+    "path": "los-cabos/weddings.webp",
+    "alt": "Mesa para celebração com vista para o mar em Los Cabos",
+    "width": 1800,
+    "height": 1201,
+    "bytes": 228348,
+    "small": {
+      "path": "los-cabos/weddings-small.webp",
+      "width": 720,
+      "height": 481,
+      "bytes": 55654
+    },
+    "sourceBytes": 14952406,
+    "sha256": "458bf60665d697207139fdc343c5252d8a82be27c3ac8689c27692c5dcc80f2c"
+  },
+  {
+    "id": 18,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/WELNESS 1.jpg",
+    "path": "los-cabos/wellness.webp",
+    "alt": "Prática de yoga em um jardim à beira-mar em Los Cabos",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 456498,
+    "small": {
+      "path": "los-cabos/wellness-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 67492
+    },
+    "sourceBytes": 55306479,
+    "sha256": "c1e5a101599b28d048582ca23e5c07fbf5436dbf52b5d7fad3b1b0573becd87a"
+  },
+  {
+    "id": 11,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/LGBT 1.jpg",
+    "path": "los-cabos/diversidade.webp",
+    "alt": "Duas pessoas na paisagem de Los Cabos ao pôr do sol",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 171936,
+    "small": {
+      "path": "los-cabos/diversidade-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 32876
+    },
+    "sourceBytes": 54437258,
+    "sha256": "f18924a11f4ab234ea734c12865263894407cf55c2cd184866720eed7cd838f7"
+  },
+  {
+    "id": 22,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/luxo e hospitalidade.jpg",
+    "path": "los-cabos/hospitalidade.webp",
+    "alt": "Hospitalidade e piscina com vista para o mar em Los Cabos",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 192782,
+    "small": {
+      "path": "los-cabos/hospitalidade-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 43018
+    },
+    "sourceBytes": 33552905,
+    "sha256": "e111cba393578aacf999fae095488d8e77bdd0a9a7a968479d057dd0df05d086"
+  },
+  {
+    "id": 8,
+    "source": "iloveimg-converted/FOTOS LOS CABOS/GASTRONOMIA LOS CABOS 1.jpg",
+    "path": "los-cabos/sabores.webp",
+    "alt": "Pratos e bebidas diante da paisagem de Los Cabos",
+    "width": 1800,
+    "height": 1934,
+    "bytes": 157618,
+    "small": {
+      "path": "los-cabos/sabores-small.webp",
+      "width": 720,
+      "height": 774,
+      "bytes": 31490
+    },
+    "sourceBytes": 3530091,
+    "sha256": "677dfd89e1694c0aef21e4b01337d78dacdae8325fb0ffcab79f385df20ae981"
+  },
+  {
+    "id": 31,
+    "source": "iloveimg-converted/XACRET/Gastronomia/001 Hotel Xcaret México BIO.jpg",
+    "path": "xcaret/gastronomia.webp",
+    "alt": "Restaurante BIO em ambiente de caverna no Hotel Xcaret México",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 407082,
+    "small": {
+      "path": "xcaret/gastronomia-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 66872
+    },
+    "sourceBytes": 15153368,
+    "sha256": "5b10d3528f3eb743ea629a4e11476a5a46670d1649c0fd0883b2a4b8f2fd6aa2"
+  },
+  {
+    "id": 57,
+    "source": "iloveimg-converted/XACRET/natureza.jpg",
+    "path": "xcaret/natureza.webp",
+    "alt": "Arquitetura e piscina dos Hoteles Xcaret em conexão com o mar",
+    "width": 1800,
+    "height": 1201,
+    "bytes": 220314,
+    "small": {
+      "path": "xcaret/natureza-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 43716
+    },
+    "sourceBytes": 33206295,
+    "sha256": "36a84721de47330c9a9a1b8178eca3f542400ecb1f00f82a9d5eba83711ce604"
+  },
+  {
+    "id": 51,
+    "source": "iloveimg-converted/XACRET/cultura/040_Mayas.jpg",
+    "path": "xcaret/cultura.webp",
+    "alt": "Apresentação cultural mexicana no universo Xcaret",
+    "width": 720,
+    "height": 1080,
+    "bytes": 111704,
+    "small": {
+      "path": "xcaret/cultura-small.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 87250
+    },
+    "sourceBytes": 1169557,
+    "sha256": "4588ac3aae0863552d2ef9d76c9cff4838665713bc70489856cae7c9ce0b4b3e"
+  },
+  {
+    "id": 45,
+    "source": "iloveimg-converted/XACRET/Parques/039_Caleta.jpg",
+    "path": "xcaret/parques.webp",
+    "alt": "Passarela e paisagem natural em um parque Xcaret",
+    "width": 1800,
+    "height": 1201,
+    "bytes": 547638,
+    "small": {
+      "path": "xcaret/parques-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 95382
+    },
+    "sourceBytes": 35344734,
+    "sha256": "34772ef9d66743ea6be4bbf6ca1f79d328ad8c68ec5fc569f779b6a37a90dae7"
+  },
+  {
+    "id": 55,
+    "source": "iloveimg-converted/XACRET/hotel xcaret.jpg",
+    "path": "xcaret/hotel-xcaret-mexico.webp",
+    "alt": "Vista aérea do Hotel Xcaret México",
+    "width": 1800,
+    "height": 1348,
+    "bytes": 698248,
+    "small": {
+      "path": "xcaret/hotel-xcaret-mexico-small.webp",
+      "width": 720,
+      "height": 539,
+      "bytes": 115762
+    },
+    "sourceBytes": 18273420,
+    "sha256": "daf9f3e06d6e1f587708cda28cfa84280a83ca98d263b3153c4a7722b0d7b34a"
+  },
+  {
+    "id": 58,
+    "source": "iloveimg-converted/XACRET/xcaret arte.jpg",
+    "path": "xcaret/hotel-xcaret-arte.webp",
+    "alt": "Arquitetura e piscinas do Hotel Xcaret Arte",
+    "width": 1800,
+    "height": 1349,
+    "bytes": 490832,
+    "small": {
+      "path": "xcaret/hotel-xcaret-arte-small.webp",
+      "width": 720,
+      "height": 539,
+      "bytes": 88526
+    },
+    "sourceBytes": 8050032,
+    "sha256": "fcb3d4cd2b78c47fa69b4cc32a2b9d807654d63e04bbe2c0c7f87ef25bd218b8"
+  },
+  {
+    "id": 56,
+    "source": "iloveimg-converted/XACRET/la casa de la playa.jpg",
+    "path": "xcaret/la-casa-de-la-playa.webp",
+    "alt": "Vista aérea de La Casa de la Playa à beira-mar",
+    "width": 1800,
+    "height": 1348,
+    "bytes": 584120,
+    "small": {
+      "path": "xcaret/la-casa-de-la-playa-small.webp",
+      "width": 720,
+      "height": 539,
+      "bytes": 98184
+    },
+    "sourceBytes": 15867742,
+    "sha256": "ca38e951caa08bc594a0a5faa34aa768adff5e22c7fa8ea0746ef9de5f48284c"
+  },
+  {
+    "id": 32,
+    "source": "iloveimg-converted/XACRET/Gastronomia/003_bio.jpg",
+    "path": "xcaret/sabores.webp",
+    "alt": "Pratos servidos diante da paisagem dos Hoteles Xcaret",
+    "width": 1800,
+    "height": 1915,
+    "bytes": 257026,
+    "small": {
+      "path": "xcaret/sabores-small.webp",
+      "width": 720,
+      "height": 766,
+      "bytes": 64778
+    },
+    "sourceBytes": 1346334,
+    "sha256": "13733ff99c247be48f31bcef6a0859c4544af35a2b9cf326f552cabe5d0cecf5"
+  },
+  {
+    "id": 48,
+    "source": "iloveimg-converted/XACRET/clutra e natureza.jpg",
+    "path": "xcaret/cultura-natureza.webp",
+    "alt": "Passeio de caiaque entre a natureza e a arquitetura de Xcaret",
+    "width": 1800,
+    "height": 1200,
+    "bytes": 393940,
+    "small": {
+      "path": "xcaret/cultura-natureza-small.webp",
+      "width": 720,
+      "height": 480,
+      "bytes": 60250
+    },
+    "sourceBytes": 36003227,
+    "sha256": "8ee5d84e522572b0c95793016602870d05b798832e7ed5b5d75dbfd2429cdcef"
+  }
+]
